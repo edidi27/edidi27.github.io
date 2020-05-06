@@ -222,25 +222,27 @@ footer{
 /*VISIT JANET'S VOID STYLES*/
 
 .janet{
-    max-height: 65vh;
+    max-height: 58vh;
 }
 
 #janet_container{
     position: relative;
-    max-width: screen;
-    left: calc(50vw - 135px);
+    max-width: calc(screen - 200px);
+    left: calc(50vw - 120px);
     margin-top: 5vh;
+    display: inline-block;
 }
 
 #janet_instructions{
     position: absolute;
     top: -5px;
-    left: -46px;
+    left: -33.5vw;
     color: darkgray;
     background-color: white;
     padding: 5px 30px;
     border-radius: 50%;
     font-size: 16px;
+    z-index: -1;
 }
 
 /*JANET'S VOID STYLES*/
@@ -327,12 +329,17 @@ footer{
     #janet_container{
         max-width: 600px;
         left: calc(50vw - 200px);
+        display: block;
     }
     
     #janet_instructions{
         font-size: 18.72px;
         top: -5px;
         left: -5px;
+    }
+    
+    .janet{
+        max-height: 65vh;
     }
     
     /*HOW YOU DIED*/

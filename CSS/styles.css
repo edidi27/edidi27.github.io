@@ -187,7 +187,7 @@ footer{
 
 #death_btn_1{
     font-size: 2.7em;
-    margin-top: 4em;
+    margin-top: 3em;
 }
 
 #new_die_button{
@@ -323,6 +323,7 @@ footer{
     }
     
     /*VISIT JANET'S VOID*/
+    
     #janet_container{
         max-width: 600px;
         left: calc(50vw - 200px);
@@ -332,6 +333,13 @@ footer{
         font-size: 18.72px;
         top: -5px;
         left: -5px;
+    }
+    
+    /*HOW YOU DIED*/
+    
+    #death_btn_1{
+        font-size: 2.7em;
+        margin-top: 4em;
     }
 }
 
@@ -359,12 +367,6 @@ footer{
     .nav_bar a {
         padding: 1.5em;
         margin-top: 2em;
-    }
-    
-    /*HOW YOU DIED*/
-    
-    #die_html_output {
-        max-width: 590px;
     }
 }
 

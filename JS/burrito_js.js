@@ -16,7 +16,3 @@ function submitOnClickOrEnter(e){
 
 burrito_btn.addEventListener("click", submitOnClickOrEnter);
 speech_input_enter_key.addEventListener("keyup", submitOnClickOrEnter);
-
-while (screen.minWidth) > 425px {
-    document.getElementById("home_in_navbar").innerHTML = `<br>Home<br>`;
-}

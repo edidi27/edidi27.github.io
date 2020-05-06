@@ -1,0 +1,419 @@
+
+
+/*UNIVERSAL STYLES*/
+
+*{
+    text-align: center;
+}
+
+li:hover a,
+li:active a,
+li:focus a{
+    color: white;
+}
+
+footer{
+    font-size: .75em;
+    font-weight: 300;
+    color: white;
+}
+
+.sticky_footer{
+    min-height:calc(100vh - 38px);
+}
+
+
+
+/* COMMON SUPPORTING PAGE STYLES*/
+
+.green_background{
+    background-color: lightgreen;
+}
+
+.page_title{
+    background-color:lightgray;
+    color: white;
+    padding: .1em;
+    font-size: .9em;
+}
+
+.main_header{
+    color:lightgreen;
+    background-color: white;
+    padding-top: 1em;
+}
+
+.nav_bar_with_tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style:none;
+    padding: 1em;
+    margin:0;
+    background-color: white;
+}
+
+.nav_title{
+    font-size: 2em;
+    margin: 0 .5em;
+}
+
+.nav_bar_with_tabs li{
+    display: flex;
+    box-shadow: 0 0 2.5px #78746d;
+    background-color: lightgreen;
+}
+
+.supporting_pages a{
+    color:white;
+    flex-grow: 1;
+    padding: .5em
+}
+
+
+
+/*INDEX STYLES*/
+
+.title {
+    color: white;
+    padding: 3em;
+    background-color:lightgreen /*in case image doesn't load*/;
+    background-image: url(../img/ihop.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.home_text {
+    color:lightgreen;
+    padding: 1em;
+    margin: 2em .2em;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.nav_instructions{
+    margin-bottom: 2em;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.nav_bar ul {
+    margin: 0;
+    padding: 0;
+    /*gets rid of default margin and padding*/
+}
+
+.nav_bar a{
+    display: block;
+    background-color: lightgreen;
+    color: #222db5;
+    border-color: white;
+    padding:1em;
+    margin: 1em;
+}
+
+
+#index_footer{
+    color: lightgreen;
+    font-weight: 300;
+}
+
+
+
+/* in future, when I know how to, make custom cursor for index page*/
+/*cursor: url(img/silver_knive.png), pointer, default;*/
+
+
+
+
+/*BURRITO STYLES*/
+
+.burrito_container{
+    margin: 3em 1em 4em;
+}
+
+.burrito{
+    max-width:10em;
+}
+
+.bubble {
+    max-width: 10em;
+    margin-bottom: 4.7em;
+}
+
+#burrito_question{
+    color:dimgray;
+    margin-top:1.8em;
+    margin-bottom:1.5em;
+}
+
+#bubble_container{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: dimgray;
+}
+
+#bubble_container p{
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#burrito_btn{
+    background-color: lightgray;
+    color: white;
+    box-shadow: 0 0 5px #78746d;
+}
+
+
+
+
+/*HOW YOU DIED STYLES*/
+
+.death_btns{
+    display: float;
+    float: auto;
+    background-color: white;
+    color: lightgreen;
+    border-color: darkgray;
+    border-width: .1em;
+    padding: .7em;
+    border-radius: 100%;
+    box-shadow: 0 0 10px #78746d;
+}
+
+#death_btn_1{
+    font-size: 2.7em;
+    margin-top: 4em;
+}
+
+#new_die_button{
+    display: inline-block;
+}
+
+
+#die_html_output{
+    color: darkgray;
+    align-content: center;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 5.8vh;
+    margin-bottom: 1.5em;
+}
+
+#die_html_output p{
+    background-color:white;
+    padding: .5em;
+    box-shadow: 0 0 10px #78746d;
+}
+
+#die_html_output img{
+    margin-top: 1.7em;
+    max-width: 90vw;
+    max-height: 35vh;
+    box-shadow: 0 0 15px #78746d;
+}
+
+
+
+/*VISIT JANET'S VOID STYLES*/
+
+.janet{
+    max-height: 65vh;
+}
+
+#janet_container{
+    position: relative;
+    max-width: screen;
+    left: calc(50vw - 135px);
+    margin-top: 5vh;
+}
+
+#janet_instructions{
+    position: absolute;
+    top: -5px;
+    left: -46px;
+    color: darkgray;
+    background-color: white;
+    padding: 5px 30px;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+/*JANET'S VOID STYLES*/
+    
+#void_content{
+    animation: leave_void 5s; /*keyframes at bottom of page*/
+    color: lightgreen;
+    margin-top: 10vh;
+}
+
+#void_content button{
+    background-color: lightgreen;
+    color: white;
+    box-shadow: 0 0 5px lightgray;
+}
+
+
+
+/*MEDIA QUERIES*/
+    
+
+@media screen and (min-width: 425px){
+    
+    /*NAV BAR ON SUPPORTING PAGES*/
+    
+    .main_header,
+    .nav_bar_with_tabs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style:none;
+        background-color: white;
+        color:lightgreen;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+    
+    .main_header{
+        padding: 0;
+    }
+    
+    .nav_bar_with_tabs li{
+        margin-left: 0;
+        box-shadow: none;
+        padding: 0;
+        background-color: white;
+    }
+    
+    .supporting_pages a{
+        color:lightgreen;
+        padding: 1em;
+    }
+    
+    .supporting_pages li:hover,
+    .supporting_pages li:active,
+    .supporting_pages li:focus{
+        background-color:lightgreen;
+    }
+    
+    .nav_title{
+        margin: default;
+        font-size: 1.5em;
+        text-shadow: none;
+    }
+    
+    /*BURRITO*/
+    
+    .burrito{
+        max-width:13em;
+    }
+
+    .bubble {
+        max-width: 12em;
+        margin-bottom: 4.7em;
+    }
+    
+    #bubble_container p{
+        top: 21%;
+    }
+    
+    /*VISIT JANET'S VOID*/
+    #janet_container{
+        max-width: 600px;
+        left: calc(50vw - 200px);
+    }
+    
+    #janet_instructions{
+        font-size: 18.72px;
+        top: -5px;
+        left: -5px;
+    }
+}
+
+@media screen and (min-width:550px){
+    
+    /*INDEX*/
+    
+    .home_text {
+        font-size: 1.2rem;
+        margin-top: 1em;
+    }
+    
+    .nav_instructions{
+        margin-top: 2em;
+    }
+    
+    .nav_bar {
+        white-space: nowrap;
+    }
+    
+    .nav_bar li {
+        display: inline-block;
+    }
+    
+    .nav_bar a {
+        padding: 1.5em;
+        margin-top: 2em;
+    }
+    
+    /*HOW YOU DIED*/
+    
+    #die_html_output {
+        max-width: 590px;
+    }
+}
+
+
+@media screen and (min-width:692px){
+    
+    /*INDEX: has own media query to match when nav title changes to one line*/
+    
+    .nav_bar a {
+        padding: 2em;
+    }
+}
+
+@media screen and (min-width:700px){
+
+    /*BURRITO*/
+    
+    .burrito_container{
+        margin-top: 4.7em;
+    }
+    
+    /*HOW YOU DIED*/
+    
+    #die_html_output{
+        margin-top: 7vh;
+    }
+}
+
+@media screen and (min-width:759px){
+    
+    /*VISIT JANET'S VOID: has own media query to match when nav title changes to one line*/
+    
+    #janet_container{
+        margin-top: 3.8em;
+    }
+}
+
+
+
+
+/*JANET'S VOID ANIMATION*/
+
+@keyframes leave_void{
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }

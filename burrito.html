@@ -1,0 +1,65 @@
+<!doctype html>
+
+
+<html>
+
+    <head>
+        <title>The Almighty Burrito</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel= "stylesheet" href= CSS/normalize.css>
+        <link rel= "stylesheet" href= CSS/styles.css>
+    </head>
+    
+
+    <body class="green_background supporting_pages">
+        <div class="sticky_footer">
+                    
+            <!--NAV-->
+            <header class="main_header">
+                <h1 class="nav_title">Interdimensional Hole of Pancakes</h1>
+                <ul class="nav_bar_with_tabs">
+                    <li>
+                        <a id= home_in_navbar href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="visit_janets_void.html">Janet's Void</a>
+                    </li>
+
+                    <li>
+                        <a href="how_you_died.html">How You Died</a>
+                    </li>
+                </ul>
+            </header>
+        
+            <div class="page_title">
+                <h1>The Almighty Burrito</h1>
+            </div>
+
+            <div class="burrito_container">
+                <!-- BURRITO AND SPEECH BUBBLE IMAGES-->
+
+                <img class= "burrito" src="img/burrito.png" alt="The Almighty Burrito Image" title="The Almighty Burrito">
+                
+                <div id = bubble_container>
+                    <img class= "bubble" src="img/speech_bubble.png" alt="Speech Bubble">
+                    <p id= "speech_output">Hi, I'm the almighty burrito!</p>
+                </div>
+
+                <!--USER INPUT-->
+                <h2 id="burrito_question">What do you want the almighty burrito <br> to say?</h2>
+                
+                <input type="text" id="speech_input" name="burrito_input" maxlength="96">
+                <button type="submit" id= burrito_btn>Make burrito talk!</button>
+                
+            </div>
+        </div>
+
+        <footer>
+            <p> &copy; the dot over the i</p>
+        </footer>
+        
+        <script src="JS/burrito_js.js"></script>
+
+    </body>
+</html>

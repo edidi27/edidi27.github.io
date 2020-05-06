@@ -100,8 +100,7 @@ footer{
 
 .nav_bar ul {
     margin: 0;
-    padding: 0;
-    /*gets rid of default margin and padding*/
+    padding: 0; /*gets rid of default margin and padding*/
 }
 
 .nav_bar a{
@@ -118,7 +117,6 @@ footer{
     color: lightgreen;
     font-weight: 300;
 }
-
 
 
 /* in future, when I know how to, make custom cursor for index page*/
@@ -347,6 +345,10 @@ footer{
     #death_btn_1{
         font-size: 2.7em;
         margin-top: 4em;
+    }
+    
+    #die_html_output{
+        max-width: 590px;
     }
 }
 
